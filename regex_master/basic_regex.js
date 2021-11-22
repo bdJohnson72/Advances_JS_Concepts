@@ -14,6 +14,14 @@ function validatePhone(phoneNumber){
     return phoneExpression.test(phoneNumber)
 }
 
+/*
+Check for non alphabetic characters. Case insensitive
+ */
+function textOnly(text){
+    const regex = /[^a-z]/i
+    return regex.exec(text);
+}
+
 console.log(validatePhone('1234567800'))
 //You can also you the exec method for more details
 //console.log(regex2.exec(text));
@@ -29,3 +37,7 @@ console.log(text.search(regex2))
 //use split with a regex gives an array
 
 console.log(text.split(regex1))
+console.log(textOnly('Brooks'))
+console.log(textOnly('brooks'))
+console.log(textOnly('Brooks55'))
+console.log(textOnly('Brooks Johnson'))
