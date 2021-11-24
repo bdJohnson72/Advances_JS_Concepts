@@ -19,3 +19,19 @@ console.log(toshiro)
 console.table(toshiro)
 console.log(toshiro.attack())
 console.log(toshiro.sneak())
+
+//We could achieve this with object.create and things would be a little cleaner IMHO
+
+const person = {
+    name: '',
+    age: '',
+    greet: function (){
+      return  `my name is ${this.name}. I am ${this.age} years old`
+    }
+}
+
+const  me = Object.create(person);
+me.name = 'Brooks';
+me.age = 49;
+console.log(me.greet());
+
