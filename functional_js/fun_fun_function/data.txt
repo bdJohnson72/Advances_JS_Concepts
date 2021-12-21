@@ -1,0 +1,7 @@
+brooks johnson,  waffle iron, 2, 100
+brooks johnson,  blender, 1, 200
+brooks johnson,  knife, 4, 25
+Lacy Adams, blender, 1, 200
+Lacy Adams, instantpot, 1, 200
+Lacy Adams, knife, 2, 50
+
